@@ -70,7 +70,7 @@
   </div>
   <div class="backdrop" id="backdrop"><section class="modal"><div class="mhead"><div><h2>更新 2026 经营数据</h2><p>支持直接导入 Excel、CSV 或 JSON；导入后检查预览并保存。</p></div><button class="close" id="closeModal">×</button></div><div class="tools"><label class="file"><input type="file" id="fileInput" accept=".xlsx,.xls,.csv,.tsv,.json,.txt,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/vnd.ms-excel,text/csv,application/json,text/plain">导入 Excel / CSV / JSON</label><button id="downloadExcel">下载 Excel 模板</button><button id="downloadJson">下载 JSON 模板</button></div><textarea id="dataInput" spellcheck="false"></textarea><div class="mfoot"><span id="error"></span><button class="cancel" id="cancel">取消</button><button class="save" id="save">保存并更新看板</button></div></section></div>
   <div class="toast" id="toast">✓ 看板数据已更新</div>
-  <script src="https://cdn.sheetjs.com/xlsx-0.20.3/package/dist/xlsx.full.min.js"></script>
+  <script src="./xlsx.full.min.js"></script>
   <script>
     const KEY="ops-cockpit-2026-offline-v2";
     const zeroMetric=(label,value,unit,target)=>({label,value,unit,target,delta:"0",status:"pending",note:"待录入数据"});
